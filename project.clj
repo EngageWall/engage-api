@@ -12,10 +12,12 @@
                  [http-kit "2.1.16"]
                  [liberator "0.12.1"]
                  [korma "0.4.0"]
+                 [lobos "1.0.0-beta1"]
                  [org.postgresql/postgresql "9.3-1102-jdbc41"]
                  [ch.qos.logback/logback-classic "1.1.2"]
                  [ch.qos.logback/logback-core "1.1.2"]
                  [org.apache.logging.log4j/log4j-to-slf4j "2.0.2"]]
-  :main ^:skip-aot engage-api.core
+  :main ^:skip-aot engage.api.core
   :target-path "target/%s"
+  :jvm-opts  ["-Dnomad.env=dev"]
   :profiles {:uberjar {:aot :all}})

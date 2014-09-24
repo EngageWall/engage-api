@@ -1,4 +1,5 @@
-(ns engage-api.core
+(ns engage.api.core
+  (:require [engage.api.conf])
   (:gen-class))
 
 (defn -main

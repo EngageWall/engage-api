@@ -1,0 +1,12 @@
+{:nomad/environments
+ {"dev"
+  {:send-emails? false}
+  "prod"
+  {:send-emails? true}}
+ :nomad/hosts
+ {"Eduardos-MacBook-Pro.local"
+  {:nomad/private-file #nomad/file "/Users/iamedu/.engage.edn"}}
+ :logback {:file "conf/logback.xml"}
+ :database {:username "engage"
+            :password "engage"
+            :url "jdbc:postgresql:engage"}}
